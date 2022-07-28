@@ -15,10 +15,10 @@ async function getPokeData(){
         let imgLink = result.sprites.front_default;
         pokedex.innerHTML += 
         `
-
-        <li>${result.id}</li> <br>
-        <li class="pokeName">${result.name}</li><br>
-        <li><img src="${imgLink}" alt="${result.id}"/> </li><br>
+        <li class="card">
+        <img class="pokeImg" src="${imgLink}" alt="${result.id}"/>
+        <h2 class="pokeHeading">${result.id} <p class="pokeName">${result.name}</p></h2>
+        </li>
         `
       }
 }
